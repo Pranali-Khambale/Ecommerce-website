@@ -1,0 +1,203 @@
+body {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #f7f7f7;         /* Light background color */
+  padding: 40px 0;                   /* Padding around the footer */
+  text-align: center;                /* Center the content */
+  font-family: 'Plus Jakarta Sans', sans-serif;  /* Using the same font for consistency */
+  width: 100%;                        /* Make the footer occupy 100% width */
+  position: relative;                 /* Allow positioning of child elements */
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+/* .card {
+  border: none !important;
+  margin-bottom: 2rem;
+} */
+listing.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none !important;
+}
+
+/* Card Overlay Effect */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn,
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+  
+}
+
+/* Show Page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding: 0;
+  padding-right: 0;
+}
+/* Map */
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+ 
+ /* Search Button Styling */
+ .search-btn {
+  background-color: #fe424d !important; /* Red color */
+  color: #fff !important;               /* White text */
+  border-radius: 50px;                  /* Fully rounded corners */
+  padding: 0.4rem 1.5rem;               /* Reduced padding for a smaller button */
+  font-size: 0.9rem;                    /* Smaller font size */
+  border: none;                         /* Remove default border */
+  display: inline-flex;                 /* Align icon and text properly */
+  justify-content: center;              /* Center content horizontally */
+  align-items: center;                  /* Center content vertically */
+  text-transform: uppercase;            /* Uppercase text */
+  transition: all 0.3s ease;            /* Smooth transition for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for floating effect */
+}
+
+/* Search Button Hover Effect */
+.search-btn:hover {
+  background-color: #d83b44;  /* Darker red shade for hover */
+  color: #fff;                /* Keep text white */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  cursor: pointer;           /* Pointer cursor on hover */
+}
+
+/* Search Button Icon Styling */
+.search-btn i {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.1rem;    /* Slightly larger icon */
+}
+
+/* Optional: Focus Effect */
+.search-btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px #ff4c5b; /* Red focus border */
+}
+/* index.ejs */
+#filters{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+}   
+.filter {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.filter:hover {
+  opacity:1;
+  cursor:pointer;
+}
+.filter p {
+  font-size: 0.8rem;
+}
+.tax-info{
+  display: none;
+}
+.tax-toggle {
+  border:1px solid black;
+  border-radius: 1rem;
+  height:3.5rem;
+  padding:1rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
