@@ -90,27 +90,14 @@ app.use((req,res,next) => {
 
 
 // Listings and Reviews Routes
-app.use("/listings", listingRouter); 
+app.use("/", listingRouter); 
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/",userRouter);
  
 
 
-app.get("/", (req, res) => {
-  res.send("Hi, I am root");
-});
 
-// // Error handling route
-// app.all("*", (req, res, next) => {
-//   next(new ExpressError(404, "Page Not Found"));
-// });
 
-// Centralized error handler
-// Catches and displays errors
-// app.use((err, req, res, next) => {
-//   const { statusCode = 500, message = "Something went wrong" } = err;
-//   res.status(statusCode).render("error.ejs", { message });
-// });
 
 // Start server
 // Runs the server on port 8080
