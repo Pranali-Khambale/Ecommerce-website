@@ -96,9 +96,9 @@ app.use("/",userRouter);
  
 
 
-app.get("/", (req, res) => {
-  res.send("Hi, I am root");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hi, I am root");
+// });
 
 // // Error handling route
 // app.all("*", (req, res, next) => {
