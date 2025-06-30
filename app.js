@@ -77,6 +77,7 @@ app.use((req,res,next) => {
   res.locals.currUser = req.user ||null;
   next();
 });
+app.get("/favicon.ico", (req, res) => res.status(204).end());
 
 // app.get("/demouser",async (req,res) => {
 //   let fakeUser = new User({
